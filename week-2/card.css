@@ -48,7 +48,7 @@ body > * {
   display: flex;
   flex-direction: column-reverse;
 }
-.flex-rev {
+.flex-row {
   /* header at top */
   display: flex;
   flex-direction: row;
@@ -65,11 +65,13 @@ body > * {
 .content-header-abs > h3 {
   color: white;
 }
+.main-card-content-header div:nth-child(1) {
+  flex-shrink: 2;
+}
 .main-card-content-header img {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  flex-shrink: 2;
 }
 
 .main-card-content-header-title {
