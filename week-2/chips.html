@@ -11,17 +11,56 @@
     <fieldset class="inp-chip">
       <legend>Favorite Fruits</legend>
 
-      <div id="chip0" class="inp-chip--div">
-        <label>apple</label><span>X</span>
+      <div class="inp-chip--div">
+        <label>apple</label>
+        <span class="close"> </span>
       </div>
-      <div id="chip1" class="inp-chip--div">
-        <label>apple</label><span>X</span>
+      <div class="inp-chip--div">
+        <label>Banana</label>
+        <span class="close"> </span>
       </div>
-      <div id="chip2" class="inp-chip--div">
-        <label>apple</label><span>X</span>
+      <div class="inp-chip--div">
+        <label>mango</label>
+        <span class="close"> </span>
       </div>
       <input type="text" placeholder="enter the name" />
     </fieldset>
-    <script src="./chips.js"></script>
+    <div>
+      basic chips:
+      <div class="inp-chip--div"><label>apple</label></div>
+      <div class="inp-chip--div"><label>Banana</label></div>
+      <div class="inp-chip--div"><label>mango</label></div>
+    </div>
+
+    <div>
+      icon chips:
+      <div class="inp-chip--div">
+        <span><img src="./svgs/apple.svg" /></span><label>apple</label>
+      </div>
+      <div class="inp-chip--div">
+        <span><img src="./svgs/banana.svg" /></span><label>Banana</label>
+      </div>
+      <div class="inp-chip--div">
+        <span><img src="./svgs/mango.svg" /></span><label>mango</label>
+      </div>
+    </div>
+
+    <div>
+      icon chips with colse button:
+      <div class="inp-chip--div">
+        <span><img src="./svgs/apple.svg" /></span><label>apple</label>
+        <span class="close"></span>
+      </div>
+      <div class="inp-chip--div">
+        <span><img src="./svgs/banana.svg" /></span><label>Banana</label>
+        <span class="close"></span>
+      </div>
+      <div class="inp-chip--div">
+        <span><img src="./svgs/mango.svg" /></span><label>mango</label>
+        <span class="close"></span>
+      </div>
+    </div>
+
+    <script src="./chips.js" type="module"></script>
   </body>
 </html>

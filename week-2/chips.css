@@ -3,9 +3,9 @@
 =============================================*/
 
 :root {
-  --inp-card-light-gray: rgba(185, 185, 185, 0.2);
-  --inp-card-gray: rgba(0, 0, 0, 0.5);
-  --inp-card-dark-gray: rgba(0, 0, 0, 0.7);
+  --inp-card-light-gray: rgba(230, 230, 230);
+  --inp-card-gray: rgba(200, 200, 200);
+  --inp-card-dark-gray: rgba(170, 170, 170);
 }
 
 /*=====  End of COLORS  ======*/
@@ -26,6 +26,8 @@
   border-color: var(--inp-card-gray);
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .inp-chip:hover {
   border-color: black;
@@ -50,11 +52,26 @@
 }
 
 .inp-chip--div {
-  background-color: var(--inp-card-light-gray);
-  display: flex;
-  gap: 0.5rem;
+  background-color: var(--inp-card-gray);
+  display: inline-flex;
+  align-items: center;
+  width: min-content;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   border-radius: 2rem;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
+  padding: 0.25rem 0.5rem;
+  gap: 0.5rem;
+}
+.inp-chip--div:hover {
+  background-color: var(--inp-card-dark-gray);
+}
+.inp-chip--div span {
+  height: 1em;
+  width: 1em;
+}
+.inp-chip--div span svg,
+.inp-chip--div span img {
+  height: 100%;
+  width: 100%;
 }
 /*=====  End of inp-chip  ======*/
