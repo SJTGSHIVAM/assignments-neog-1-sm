@@ -1,0 +1,29 @@
+:root {
+  font-size: 1rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(227, 227, 228);
+}
+
+/*=============================================
+=            drawer            =
+=============================================*/
+
+.drawer {
+  background-color: white;
+}
+.drawer ul {
+  list-style: none;
+}
+.drawer li {
+  margin: 1rem;
+}
+
+/*=====  End of drawer  ======*/
