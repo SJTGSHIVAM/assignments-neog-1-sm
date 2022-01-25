@@ -2,8 +2,10 @@ const toastBtn = document.querySelector("#toast-btn");
 const toastBtnLead = document.querySelector("#toast-btn-lead");
 const toastBtnStack = document.querySelector("#toast-btn-stack");
 const toastBtnStackLead = document.querySelector("#toast-btn-stack-lead");
+const toastBtnClose = document.querySelector(".toast__btn--close");
 const toast = document.querySelector("#toast");
 let toastTimer;
+
 function removeToast() {
   toast.classList.add("td");
   toast.classList.remove("toast");
@@ -45,3 +47,4 @@ toastBtnStackLead.addEventListener("click", () => {
     toastTimer = setTimeout(removeToast, 5000);
   }
 });
+toastBtnClose.addEventListener("click", removeToast);
