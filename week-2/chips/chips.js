@@ -80,4 +80,3 @@ function addChip(e) {
     inpText.value = "";
   }
 }
-// function reg() {}
