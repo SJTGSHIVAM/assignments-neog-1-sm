@@ -29,7 +29,7 @@ body {
 .tabs__list--main {
   list-style: none;
   display: flex;
-
+  overflow-x: hidden;
   width: 100%;
 }
 .tab__style--scroll {
