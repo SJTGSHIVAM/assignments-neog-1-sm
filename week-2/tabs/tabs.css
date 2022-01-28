@@ -1,0 +1,81 @@
+:root {
+  font-size: 1rem;
+  --text-color: rgb(0, 0, 0);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(227, 227, 228);
+  color: var(--tabs-inactive-color);
+}
+
+/*=============================================
+=            tabs            =
+=============================================*/
+.tabs {
+  --tab-color: rgb(81, 13, 160);
+  --inactive-text-color: rgb(148, 121, 179);
+  --active-text-color: rgb(255, 255, 255);
+
+  background-color: var(--tab-color);
+  color: var(--inactive-text-color);
+}
+
+.tabs__list--main {
+  list-style: none;
+  display: flex;
+
+  width: 100%;
+}
+.tab__style--scroll {
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+.tab__style--scroll > .tab__l {
+  margin-left: 10vw;
+}
+.tabs__no-icon > .tabs__li > .tabs__li--icon {
+  display: none;
+}
+.tabs__only-icon > .tabs__li > .tabs__li-title {
+  display: none;
+}
+
+.tabs__li {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  width: 100%;
+}
+.tabs__top-icon > .tabs__li {
+  flex-direction: column;
+  align-items: center;
+}
+.tabs__li--active {
+  color: var(--active-text-color);
+  border-bottom: 0.25rem solid var(--active-text-color);
+}
+
+.tabs__li--icon {
+  height: 2.5x;
+  width: 2.5ex;
+  opacity: 0.5;
+}
+.tabs__li--active > .tabs__li--icon {
+  opacity: 1;
+}
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.invisible-scrollbar {
+  scrollbar-width: none;
+}
+/*=====  End of tabs  ======*/
